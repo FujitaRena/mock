@@ -8,6 +8,7 @@
             body {
                 font-size: 20px;
                 font-family: 'Inter', sans-serif;
+                font-weight: 400;
             }
             
             .labelgroup {
@@ -17,10 +18,12 @@
             .label {
                 background-color: #006788;
                 width: 288px;
+                height: auto;
                 color: #FFFEFE;
                 border-right: 4px solid #000000;
                 display: flex;
                 flex-direction: column;
+                overflow: hidden;
             }
 
             .header1 {
@@ -33,23 +36,12 @@
 
             .header2 {
                 height: 100vh;
-                overflow-y: scroll;
+                max-height: 65%;
+                overflow-y: scroll;  
             }
 
             .users {
                 padding-top: 70px;
-            }
-
-            .label2 {
-                background-color: #D9D9D9;
-                width: calc(100% - 288px);
-                height: 79px;
-                display: flex;
-                align-items: center;
-            }
-            
-            .label2 p {
-                display: column;
             }
 
             span {
@@ -63,10 +55,36 @@
                 border-radius: 10px;
             }
 
+            .label2 {
+                background-color: #EDECEC;
+                width: calc(100% - 288px);
+                height: auto;
+                position: relative;
+            }
+
             .label2 img {
                 border: 1px solid #000000;
             }
 
+            .header3 {
+                background-color: #D9D9D9;
+                height: 79px;
+                display: flex;
+                align-items: center;
+            }
+
+            .messageform img {
+                border: none;
+                width: 24px;
+                height: 24px;
+                border-radius: 0;
+            }
+
+            .send img {
+                width: 48px;
+                height: 48px;
+                margin-right: 10px;
+            }
         </style>
 
         </head>
@@ -87,13 +105,40 @@
                 <div class="header3">
                     <p><img src="img/business60 2.png" alt="ログインユーザー2アイコン"><span>ユーザー2</span></p>
                 </div>
-
-                <div class="chat">
-                    <p></p>
+                <div class="chatfield">
+                    <div class="chat1">
+                        <div class="header4">
+                            <p><img src="img/a508cab663bfa739b965ca0ec8ac4ea6_t 1.png" alt="ログインユーザーアイコン"><span>ログインユーザー</span></p>
+                        </div>
+                        <div class="message">
+                            <p>メッセージメッセージメッセージメッセージメッセージメッセージメッセージ</p>
+                            <p>メッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージ</p>
+                            <p>メッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージ</p>
+                            <p>メッセージメッセージ</p>
+                            <p class="date">YYYY/MM/DD HH:mm</p>
+                        </div>
+                    </div>
+                    <div class="chat2">
+                        <div class="header4">
+                            <p><img src="img/business60 2.png" alt="ログインユーザー2アイコン"><span>ユーザー2</span></p>
+                        </div>
+                        <div class="message">
+                            <p>メッセージメッセージメッセージメッセージメッセージメッセージメッセージ</p>
+                            <p>メッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージ</p>
+                            <p>メッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージ</p>
+                            <p>メッセージメッセージ</p>
+                            <p class="date">YYYY/MM/DD HH:mm</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="messageform">
+                    <p><img src="img/写真アイコン9 1.png" class="button" onclick="goClick()" alt="画像添付アイコン"><span>アップロードファイル.png</span></p>
+                    <div class="send">
+                        <textarea id="message" name="message" maxlength="500">送信メッセージ送信メッセージ送信メッセージ送信メッセージ送信メッセージ送信メッセージ送信メッセージ送信メッセージ送信送信</textarea>
+                        <img src="img/無料の紙飛行機アイコン (2) 1.png" class="button" onclick="goClick()" alt="送信ボタン">
+                    </div>
                 </div>
             </div>
-
         </div>
-
     </body>
 </html>

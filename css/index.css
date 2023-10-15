@@ -1,3 +1,69 @@
 @import url(sanitize.css);
 @import url('https://fonts.googleapis.com/css2?family=Fuggles&display=swap');
 
+
+.chatfield {
+    overflow-y: scroll;
+    max-height: 65%;
+}
+
+.chat1 {
+    margin: 40px 30px;
+    border-bottom: 1px solid #000000;
+}
+
+.chat2 {
+    margin: 40px 30px;
+    border-bottom: 1px solid #000000;
+}
+
+.header4 {
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    margin: 0;
+    font-size: 16px;
+    margin-left: 90px;
+}
+
+.message p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.date {
+    color: #6D6666;
+    padding: 10px 0;
+    text-align: end;
+}
+
+.messageform {
+    width: 95%;
+    max-height: 30%;
+    border: 1px solid #1E1E1E;
+    background-color: #FFFEFE;
+    border-radius: 10px;
+    position: absolute;
+    left: 2.5%;
+    bottom: 20px;
+    padding: 10px 10px;
+    font-size: 16px;
+}
+
+
+textarea {
+    resize: none;
+    background-color: #EDECEC;
+    font-size: 16px;
+    padding: 10px 10px;
+    width: 97%;
+    height: 4em;
+}
+
+.send {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
