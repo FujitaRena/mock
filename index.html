@@ -1,29 +1,63 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <title>ログイン画面</title>
-    <link rel="stylesheet" href="css/style.css">
+    <head>
+        <meta charset="UTF-8">
+        <title>メイン画面</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/index.css">
 
-</head>
-
-<body>
-    <div class="container">
-        <header>
-            <P>Chat アプリケーション</P>
-        </header>
-        <section>
-            <div class="content">
-                <div class="information">
-                    <P><label for="mymail">ログインID（メールアドレス）</label><input id="mymail" type="email" name="mymail" maxlength="254" required></P>
-                    <p><label for="mypassword">パスワード</label><input id="mypassword" type="password" name="mypasswprd" maxlength="20" required></p>
+    </head>
+    <body>
+        <div class="labelgroup">
+            <div class="label">
+                <div class="header1">
+                    <p><img src="img/a508cab663bfa739b965ca0ec8ac4ea6_t 1.png" alt="ログインユーザーアイコン"><span>ログインユーザー</span></p>
                 </div>
-                <div class="button">
-                    <p><button type="login">ログイン</button></p>
-                    <p><button type="submit">アカウント新規登録</button></p>
+                <div class="header2">
+                    <div class="users">
+                        <P><img src="img/business60 2.png" alt="ログインユーザー1アイコン"><span>ユーザー1</span></P>
+                        <P><img src="img/business60 2.png" alt="ログインユーザー2アイコン"><span>ユーザー2</span></P>
+                    </div>
                 </div>
             </div>
-        </section>
-    </div>
-</body>
+            <div class="label2">
+                <div class="header3">
+                    <p><img src="img/business60 2.png" alt="ログインユーザー2アイコン"><span>ユーザー2</span></p>
+                </div>
+                <div class="chatfield">
+                    <div class="chat1">
+                        <div class="header4">
+                            <p><img src="img/a508cab663bfa739b965ca0ec8ac4ea6_t 1.png" alt="ログインユーザーアイコン"><span>ログインユーザー</span></p>
+                        </div>
+                        <div class="message">
+                            <p>メッセージメッセージメッセージメッセージメッセージメッセージメッセージ</p>
+                            <p>メッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージ</p>
+                            <p>メッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージ</p>
+                            <p>メッセージメッセージ</p>
+                            <p class="date">YYYY/MM/DD HH:mm</p>
+                        </div>
+                    </div>
+                    <div class="chat2">
+                        <div class="header4">
+                            <p><img src="img/business60 2.png" alt="ログインユーザー2アイコン"><span>ユーザー2</span></p>
+                        </div>
+                        <div class="message">
+                            <p>メッセージメッセージメッセージメッセージメッセージメッセージメッセージ</p>
+                            <p>メッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージ</p>
+                            <p>メッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージ</p>
+                            <p>メッセージメッセージ</p>
+                            <p class="date">YYYY/MM/DD HH:mm</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="messageform">
+                    <p><img src="img/写真アイコン9 1.png" class="button" onclick="goClick()" alt="画像添付アイコン"><span>アップロードファイル.png</span></p>
+                    <div class="send">
+                        <textarea id="message" name="message" maxlength="500">送信メッセージ送信メッセージ送信メッセージ送信メッセージ送信メッセージ送信メッセージ送信メッセージ送信メッセージ送信送信</textarea>
+                        <img src="img/無料の紙飛行機アイコン (2) 1.png" class="button" onclick="goClick()" alt="送信ボタン">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
