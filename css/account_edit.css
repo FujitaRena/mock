@@ -1,17 +1,14 @@
-@import url(sanitize.css);
-@import url('https://fonts.googleapis.com/css2?family=Fuggles&display=swap');
-
 body {
     font-size: 20px;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
 }
 
-.labelgroup {
+.group {
     display: flex;
 }
 
-.label {
+.section {
     background-color: #006788;
     width: 288px;
     height: 100vh;
@@ -50,14 +47,14 @@ img {
     border-radius: 10px;
 }
 
-.label2 {
+.section2 {
     background-color: #EDECEC;
     width: calc(100% - 288px);
     height: auto;
 
 }
 
-.label2 img {
+.section2 img {
     border: 1px solid #000000;
 }
 
@@ -95,6 +92,27 @@ input {
     display: flex;
     align-items: center;
     margin-top: 20px;
+}
+
+.select_img {
+    background-color: #006788;
+    color: #FFFEFE;
+    font-size: 20px;
+    border: none;
+    width: 101px;
+    height: 43px;
+    text-align: center;
+    padding-top: 17px;
+    position: relative;
+}
+
+input[type=file] {
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
 
 .edit_icon img {

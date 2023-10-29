@@ -3,12 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <title>プロフィール編集</title>
+        <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/account_edit.css">
     </head>
 
     <body>
-        <div class="labelgroup">
-            <div class="label">
+        <div class="group">
+            <div class="section">
                 <div class="header1">
                     <p><img src="img/a508cab663bfa739b965ca0ec8ac4ea6_t 1.png" alt="ログインユーザーアイコン"><span>ログインユーザー</span></p>
                 </div>
@@ -19,24 +20,26 @@
                     </div>
                 </div>
             </div>
-            <div class="label2">
+            <div class="section2">
                 <div class="header3">
                     <p>プロフィール編集</p>
                 </div>
                 <div class="content">
-                    <p class="change_password"><a href="#">パスワードを変更する</a></p>
+                    <p class="change_password"><a href="change_password.html">パスワードを変更する</a></p>
                     <div class="edit">
                         <p>ユーザー名</p>
                         <p><input id="username" type="text" name="username" maxlength="20" required></p>
                         <div class="edit_icon">
                             <p><img img src="img/a508cab663bfa739b965ca0ec8ac4ea6_t 1.png" alt="変更ログインユーザーアイコン"></p>
-                            <p><a href="#"><button type="button">画像選択</button></a></p>
+                            <div class="select_img">
+                                画像選択
+                                <input type="file" accept="image/png, image/jpeg" />
+                            </div>
                         </div>
                         <div class="submit_button">
-                            <p><a href="#"><button type="submit">変更</button></a></p>
+                            <p><a href="index.html"><button type="submit">変更</button></a></p>
                         </div>
                     </div>
-    
                 </div>
             </div>
         </div>
