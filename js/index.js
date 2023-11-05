@@ -1,6 +1,7 @@
+
 function submit_msg() {
     const ta1 = document.getElementById('message').value;
-    document.getElementById('mymessage').textContent = ta1;
+    document.getElementById('mymessage').innerText = ta1;
 
     const now = new Date();
     const nowYear = now.getFullYear(); 
@@ -10,8 +11,6 @@ function submit_msg() {
     const nowMinute = ("0" + now.getMinutes()).slice(-2);
     document.getElementById('date').innerText = nowYear + '/' + nowMon + '/' + nowDate + ' ' + nowHour  + ':' + nowMinute;
 }
-
-
 
 window.onload = function() {
 
@@ -24,4 +23,17 @@ window.onload = function() {
         reader.readAsText(file);
         file_name.innerText = fh_list[0].name;
     });
+
+/*
+const textarea = document.getElementById("textarea");
+const button = document.getElementById("submit");
+button.addEventListener('change', stateHandle);
+    function stateHandle() {
+        if (document.querySelector('.textarea').value === null) {
+        submit.disabled = true;
+        } else {
+        submit.disabled = false;
+        }
+    };
+*/ 
 }
