@@ -1,5 +1,5 @@
 
-function submit_msg() {
+function submitMsg() {
     const ta1 = document.getElementById('message').value;
     document.getElementById('mymessage').innerText = ta1;
 
@@ -16,24 +16,11 @@ window.onload = function() {
 
     const upload = document.getElementById('upload_file');
     upload.addEventListener('click',async () => {
-        const fh_list = await window.showOpenFilePicker();
-        const fh = fh_list[0];
+        const fhList = await window.showOpenFilePicker();
+        const fh = fhList[0];
         const file = await fh.getFile();
         const reader = new FileReader();
         reader.readAsText(file);
-        file_name.innerText = fh_list[0].name;
+        file_name.innerText = fhList[0].name;
     });
-
-/*
-const textarea = document.getElementById("textarea");
-const button = document.getElementById("submit");
-button.addEventListener('change', stateHandle);
-    function stateHandle() {
-        if (document.querySelector('.textarea').value === null) {
-        submit.disabled = true;
-        } else {
-        submit.disabled = false;
-        }
-    };
-*/ 
 }
