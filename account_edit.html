@@ -5,6 +5,7 @@
         <title>プロフィール編集</title>
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/account_edit.css">
+        <script src="js/account_edit.js"></script>
     </head>
 
     <body>
@@ -30,10 +31,10 @@
                         <p>ユーザー名</p>
                         <p><input id="username" type="text" name="username" maxlength="20" required></p>
                         <div class="edit_icon">
-                            <p><img img src="img/a508cab663bfa739b965ca0ec8ac4ea6_t 1.png" alt="変更ログインユーザーアイコン"></p>
+                            <p><img src="img/a508cab663bfa739b965ca0ec8ac4ea6_t 1.png" id="figureImage" alt="変更ログインユーザーアイコン"></p>
                             <div class="select_img">
-                                画像選択
-                                <input type="file" accept="image/png, image/jpeg" />
+                                <label for="input">画像選択</label>
+                                <input type="file" id="input" accept="image/png, image/jpeg" >
                             </div>
                         </div>
                         <div class="submit_button">
