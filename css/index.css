@@ -7,13 +7,12 @@ body {
 
 .labelgroup {
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .label {
     background-color: #006788;
     width: 288px;
-    height: auto;
     color: #FFFEFE;
     border-right: 4px solid #000000;
     display: flex;
@@ -52,8 +51,8 @@ img {
 .label2 {
     background-color: #EDECEC;
     width: calc(100% - 288px);
-    height: auto;
     position: relative;
+    overflow: hidden;
 }
 
 .label2 img {
@@ -82,7 +81,8 @@ img {
 
 .chatfield {
     overflow-y: scroll;
-    max-height: 60%;
+    height: 68%;
+    margin-bottom: 10px;
 }
 
 .chat1 {
@@ -119,13 +119,11 @@ img {
 
 .messageform {
     width: 95%;
-    max-height: 30%;
+    max-height: 30%; 
     border: 1px solid #1E1E1E;
     background-color: #FFFEFE;
     border-radius: 10px;
-    position: absolute;
-    left: 2.5%;
-    bottom: 20px;
+    margin: 0 auto;
     padding: 10px 10px;
     font-size: 16px;
 }
