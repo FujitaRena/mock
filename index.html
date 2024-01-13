@@ -5,6 +5,7 @@
         <title>メイン画面</title>
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/index.css">
+        <script src="js/index.js"></script>
 
     </head>
     <body>
@@ -30,11 +31,8 @@
                             <p><img src="img/a508cab663bfa739b965ca0ec8ac4ea6_t 1.png" alt="ログインユーザーアイコン"><span>ログインユーザー</span></p>
                         </div>
                         <div class="message">
-                            <p>メッセージメッセージメッセージメッセージメッセージメッセージメッセージ</p>
-                            <p>メッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージ</p>
-                            <p>メッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージ</p>
-                            <p>メッセージメッセージ</p>
-                            <p class="date">YYYY/MM/DD HH:mm</p>
+                            <p id="mymessage"></p>
+                            <p class="date" id="date"><span id="date"></span></p>
                         </div>
                     </div>
                     <div class="chat2">
@@ -51,10 +49,10 @@
                     </div>
                 </div>
                 <div class="messageform">
-                    <p><img src="img/写真アイコン9 1.png" class="button" onclick="goClick()" alt="画像添付アイコン"><span>アップロードファイル.png</span></p>
+                    <p><img src="img/写真アイコン9 1.png" class="button1" id="upload_file" alt="画像添付アイコン"><span id="file_name"></span></p>
                     <div class="send">
-                        <textarea id="message" name="message" maxlength="500">送信メッセージ送信メッセージ送信メッセージ送信メッセージ送信メッセージ送信メッセージ送信メッセージ送信メッセージ送信送信</textarea>
-                        <img src="img/無料の紙飛行機アイコン (2) 1.png" class="button" onclick="goClick()" alt="送信ボタン">
+                        <textarea id="message" name="message" maxlength="500"></textarea>
+                        <img src="img/無料の紙飛行機アイコン (2) 1.png" class="button2" id="submit" onclick="submitMsg()" alt="送信ボタン">
                     </div>
                 </div>
             </div>
